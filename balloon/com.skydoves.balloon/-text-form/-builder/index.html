@@ -1,0 +1,656 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>Builder</title>
+<link href="../../../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../../../styles/style.css" rel="Stylesheet">
+<link href="../../../../styles/main.css" rel="Stylesheet">
+<link href="../../../../styles/prism.css" rel="Stylesheet">
+<link href="../../../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../../../index.html">
+                    Balloon
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":balloon:dokkaHtmlPartial/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":balloon:dokkaHtmlPartial/release" data-filter=":balloon:dokkaHtmlPartial/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Balloon
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="classlike" id="content" pageids="balloon::com.skydoves.balloon/TextForm.Builder///PointingToDeclaration//2144177878">
+  <div class="breadcrumbs"><a href="../../../index.html">balloon</a><span class="delimiter">/</span><a href="../../index.html">com.skydoves.balloon</a><span class="delimiter">/</span><a href="../index.html">TextForm</a><span class="delimiter">/</span><span class="current">Builder</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Builder</span></span></h1>
+    <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="index.html">Builder</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div><p class="paragraph">Builder class for <a href="../index.html">TextForm</a>.</p></div></div>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="CONSTRUCTOR">
+        <h2 class="">Constructors</h2>
+        <div class="table"><a data-name="-1584220739%2FConstructors%2F2144177878" anchor-label="Builder" id="-1584220739%2FConstructors%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="CONSTRUCTOR" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-builder.html"><span><span>Builder</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1584220739%2FConstructors%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></span></span><span class="token punctuation">)</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="PROPERTY">
+        <h2 class="">Properties</h2>
+        <div class="table"><a data-name="-1016905578%2FProperties%2F2144177878" anchor-label="context" id="-1016905578%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="context.html"><span><span>context</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1016905578%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">val </span><a href="context.html">context</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-398961996%2FProperties%2F2144177878" anchor-label="enableAutoSized" id="-398961996%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="enable-auto-sized.html"><span>enable</span><wbr><span>Auto</span><wbr><span><span>Sized</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-398961996%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="enable-auto-sized.html">enableAutoSized</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="108879195%2FProperties%2F2144177878" anchor-label="includeFontPadding" id="108879195%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="include-font-padding.html"><span>include</span><wbr><span>Font</span><wbr><span><span>Padding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="108879195%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="include-font-padding.html">includeFontPadding</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="372789987%2FProperties%2F2144177878" anchor-label="maxAutoSizeTextSize" id="372789987%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="max-auto-size-text-size.html"><span>max</span><wbr><span>Auto</span><wbr><span>Size</span><wbr><span>Text</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="372789987%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="max-auto-size-text-size.html">maxAutoSizeTextSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-162548299%2FProperties%2F2144177878" anchor-label="minAutoSizeTextSize" id="-162548299%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="min-auto-size-text-size.html"><span>min</span><wbr><span>Auto</span><wbr><span>Size</span><wbr><span>Text</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-162548299%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="min-auto-size-text-size.html">minAutoSizeTextSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1228781221%2FProperties%2F2144177878" anchor-label="movementMethod" id="1228781221%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="movement-method.html"><span>movement</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1228781221%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="movement-method.html">movementMethod</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/text/method/MovementMethod.html">MovementMethod</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1285266568%2FProperties%2F2144177878" anchor-label="text" id="1285266568%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text.html"><span><span>text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1285266568%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text.html">text</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1591225361%2FProperties%2F2144177878" anchor-label="textColor" id="-1591225361%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-color.html"><span>text</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1591225361%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a></div></div><span class="token keyword">var </span><a href="text-color.html">textColor</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-399088092%2FProperties%2F2144177878" anchor-label="textGravity" id="-399088092%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-gravity.html"><span>text</span><wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-399088092%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-gravity.html">textGravity</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="447191507%2FProperties%2F2144177878" anchor-label="textIsHtml" id="447191507%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-is-html.html"><span>text</span><wbr><span>Is</span><wbr><span><span>Html</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="447191507%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-is-html.html">textIsHtml</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="69822037%2FProperties%2F2144177878" anchor-label="textLetterSpacing" id="69822037%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-letter-spacing.html"><span>text</span><wbr><span>Letter</span><wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="69822037%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-letter-spacing.html">textLetterSpacing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1434057885%2FProperties%2F2144177878" anchor-label="textLineSpacing" id="-1434057885%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-line-spacing.html"><span>text</span><wbr><span>Line</span><wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1434057885%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-line-spacing.html">textLineSpacing</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="453976583%2FProperties%2F2144177878" anchor-label="textSize" id="453976583%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-size.html"><span>text</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="453976583%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="../../../../balloon/com.skydoves.balloon.annotations/-sp/index.html"><span class="token annotation builtin">Sp</span></a></div></div><span class="token keyword">var </span><a href="text-size.html">textSize</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1696002225%2FProperties%2F2144177878" anchor-label="textTypeface" id="1696002225%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-typeface.html"><span>text</span><wbr><span><span>Typeface</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1696002225%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-typeface.html">textTypeface</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1395495730%2FProperties%2F2144177878" anchor-label="textTypefaceObject" id="1395495730%2FProperties%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-typeface-object.html"><span>text</span><wbr><span>Typeface</span><wbr><span><span>Object</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1395495730%2FProperties%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">var </span><a href="text-typeface-object.html">textTypefaceObject</a><span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Typeface.html">Typeface</a><span class="token operator">?</span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="713653943%2FFunctions%2F2144177878" anchor-label="build" id="713653943%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="build.html"><span><span>build</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="713653943%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="build.html"><span class="token function">build</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="../index.html">TextForm</a></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="2086294955%2FFunctions%2F2144177878" anchor-label="setEnableAutoSized" id="2086294955%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-enable-auto-sized.html"><span>set</span><wbr><span>Enable</span><wbr><span>Auto</span><wbr><span><span>Sized</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="2086294955%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-enable-auto-sized.html"><span class="token function">setEnableAutoSized</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">Enables or disables the auto-sized text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1921413778%2FFunctions%2F2144177878" anchor-label="setIncludeFontPadding" id="-1921413778%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-include-font-padding.html"><span>set</span><wbr><span>Include</span><wbr><span>Font</span><wbr><span><span>Padding</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1921413778%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-include-font-padding.html"><span class="token function">setIncludeFontPadding</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">includes the font paddings of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2124548570%2FFunctions%2F2144177878" anchor-label="setMaxAutoSizeTextSize" id="-2124548570%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-max-auto-size-text-size.html"><span>set</span><wbr><span>Max</span><wbr><span>Auto</span><wbr><span>Size</span><wbr><span>Text</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2124548570%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-max-auto-size-text-size.html"><span class="token function">setMaxAutoSizeTextSize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="../../../../balloon/com.skydoves.balloon.annotations/-sp/index.html"><span class="token annotation builtin">Sp</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">Sets the maximum auto-sized text size.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-957501960%2FFunctions%2F2144177878" anchor-label="setMinAutoSizeTextSize" id="-957501960%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-min-auto-size-text-size.html"><span>set</span><wbr><span>Min</span><wbr><span>Auto</span><wbr><span>Size</span><wbr><span>Text</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-957501960%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-min-auto-size-text-size.html"><span class="token function">setMinAutoSizeTextSize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="../../../../balloon/com.skydoves.balloon.annotations/-sp/index.html"><span class="token annotation builtin">Sp</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">Sets the minimum auto-sized text size.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-598017224%2FFunctions%2F2144177878" anchor-label="setMovementMethod" id="-598017224%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-movement-method.html"><span>set</span><wbr><span>Movement</span><wbr><span><span>Method</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-598017224%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-movement-method.html"><span class="token function">setMovementMethod</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/text/method/MovementMethod.html">MovementMethod</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the movement method for TextView.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1485357880%2FFunctions%2F2144177878" anchor-label="setText" id="-1485357880%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text.html"><span>set</span><wbr><span><span>Text</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1485357880%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text.html"><span class="token function">setText</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-char-sequence/index.html">CharSequence</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the content text of the form.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1107897343%2FFunctions%2F2144177878" anchor-label="setTextColor" id="1107897343%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-color.html"><span>set</span><wbr><span>Text</span><wbr><span><span>Color</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1107897343%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-color.html"><span class="token function">setTextColor</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorInt.html"><span class="token annotation builtin">ColorInt</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the color of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1881866513%2FFunctions%2F2144177878" anchor-label="setTextColorResource" id="1881866513%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-color-resource.html"><span>set</span><wbr><span>Text</span><wbr><span>Color</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1881866513%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-color-resource.html"><span class="token function">setTextColorResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/ColorRes.html"><span class="token annotation builtin">ColorRes</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the color of the text using resource.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-121128076%2FFunctions%2F2144177878" anchor-label="setTextGravity" id="-121128076%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-gravity.html"><span>set</span><wbr><span>Text</span><wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-121128076%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-gravity.html"><span class="token function">setTextGravity</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets gravity of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1367833114%2FFunctions%2F2144177878" anchor-label="setTextIsHtml" id="-1367833114%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-is-html.html"><span>set</span><wbr><span>Text</span><wbr><span>Is</span><wbr><span><span>Html</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1367833114%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-is-html.html"><span class="token function">setTextIsHtml</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets whether the text will be parsed as HTML (using Html.fromHtml(..))</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1511073483%2FFunctions%2F2144177878" anchor-label="setTextLetterSpacing" id="1511073483%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-letter-spacing.html"><span>set</span><wbr><span>Text</span><wbr><span>Letter</span><wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1511073483%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-letter-spacing.html"><span class="token function">setTextLetterSpacing</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="../../../../balloon/com.skydoves.balloon.annotations/-dp/index.html"><span class="token annotation builtin">Dp</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the letter spacing value of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1512983561%2FFunctions%2F2144177878" anchor-label="setTextLetterSpacingResource" id="-1512983561%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-letter-spacing-resource.html"><span>set</span><wbr><span>Text</span><wbr><span>Letter</span><wbr><span>Spacing</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1512983561%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-letter-spacing-resource.html"><span class="token function">setTextLetterSpacingResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html"><span class="token annotation builtin">DimenRes</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the letter spacing value resource of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-265339907%2FFunctions%2F2144177878" anchor-label="setTextLineSpacing" id="-265339907%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-line-spacing.html"><span>set</span><wbr><span>Text</span><wbr><span>Line</span><wbr><span><span>Spacing</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-265339907%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-line-spacing.html"><span class="token function">setTextLineSpacing</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="../../../../balloon/com.skydoves.balloon.annotations/-dp/index.html"><span class="token annotation builtin">Dp</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the line spacing value of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1569394181%2FFunctions%2F2144177878" anchor-label="setTextLineSpacingResource" id="1569394181%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-line-spacing-resource.html"><span>set</span><wbr><span>Text</span><wbr><span>Line</span><wbr><span>Spacing</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1569394181%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-line-spacing-resource.html"><span class="token function">setTextLineSpacingResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html"><span class="token annotation builtin">DimenRes</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the line spacing value resource of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1438013498%2FFunctions%2F2144177878" anchor-label="setTextResource" id="-1438013498%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-resource.html"><span>set</span><wbr><span>Text</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1438013498%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-resource.html"><span class="token function">setTextResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/StringRes.html"><span class="token annotation builtin">StringRes</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the content text of the form using string resource.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-486631898%2FFunctions%2F2144177878" anchor-label="setTextSize" id="-486631898%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-size.html"><span>set</span><wbr><span>Text</span><wbr><span><span>Size</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-486631898%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-size.html"><span class="token function">setTextSize</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="../../../../balloon/com.skydoves.balloon.annotations/-sp/index.html"><span class="token annotation builtin">Sp</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-float/index.html">Float</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the size of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-165219195%2FFunctions%2F2144177878" anchor-label="setTextSizeResource" id="-165219195%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-size-resource.html"><span>set</span><wbr><span>Text</span><wbr><span>Size</span><wbr><span><span>Resource</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-165219195%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-size-resource.html"><span class="token function">setTextSizeResource</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/DimenRes.html"><span class="token annotation builtin">DimenRes</span></a>&nbsp;</span>value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the size of the main text content using dimension resource.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-762760852%2FFunctions%2F2144177878" anchor-label="setTextTypeface" id="-762760852%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="set-text-typeface.html"><span>set</span><wbr><span>Text</span><wbr><span><span>Typeface</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-762760852%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-typeface.html"><span class="token function">setTextTypeface</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/graphics/Typeface.html">Typeface</a><span class="token operator">?</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="symbol monospace"><span class="token keyword">fun </span><a href="set-text-typeface.html"><span class="token function">setTextTypeface</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">value<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="index.html">TextForm.Builder</a></div><div class="brief "><p class="paragraph">sets the <a href="https://developer.android.com/reference/kotlin/android/graphics/Typeface.html">Typeface</a> of the text.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2024 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

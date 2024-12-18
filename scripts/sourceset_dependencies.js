@@ -1,0 +1,1 @@
+sourceset_dependencies = '{":balloon:dokkaHtmlPartial/debug":[],":balloon:dokkaHtmlPartial/main":[],":balloon:dokkaHtmlPartial/release":[],":balloon-compose:dokkaHtmlPartial/debug":[],":balloon-compose:dokkaHtmlPartial/main":[],":balloon-compose:dokkaHtmlPartial/release":[]}'

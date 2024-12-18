@@ -1,0 +1,786 @@
+<!doctype html>
+<html class="no-js">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" charset="UTF-8">
+    <title>com.skydoves.balloon</title>
+<link href="../../images/logo-icon.svg" rel="icon" type="image/svg">    <script>var pathToRoot = "../../";</script>
+    <script>document.documentElement.classList.replace("no-js","js");</script>
+    <script>const storage = localStorage.getItem("dokka-dark-mode")
+    if (storage == null) {
+        const osDarkSchemePreferred = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches
+        if (osDarkSchemePreferred === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    } else {
+        const savedDarkMode = JSON.parse(storage)
+        if(savedDarkMode === true) {
+            document.getElementsByTagName("html")[0].classList.add("theme-dark")
+        }
+    }
+    </script>
+<script type="text/javascript" src="https://unpkg.com/kotlin-playground@1/dist/playground.min.js" async></script>
+<script type="text/javascript" src="../../scripts/sourceset_dependencies.js" async></script>
+<link href="../../styles/style.css" rel="Stylesheet">
+<link href="../../styles/main.css" rel="Stylesheet">
+<link href="../../styles/prism.css" rel="Stylesheet">
+<link href="../../styles/logo-styles.css" rel="Stylesheet">
+<link href="../../styles/font-jb-sans-auto.css" rel="Stylesheet">
+<link href="../../ui-kit/ui-kit.min.css" rel="Stylesheet">
+<script type="text/javascript" src="../../scripts/clipboard.js" async></script>
+<script type="text/javascript" src="../../scripts/navigation-loader.js" async></script>
+<script type="text/javascript" src="../../scripts/platform-content-handler.js" async></script>
+<script type="text/javascript" src="../../scripts/main.js" defer></script>
+<script type="text/javascript" src="../../scripts/prism.js" async></script>
+<script type="text/javascript" src="../../ui-kit/ui-kit.min.js" defer></script>
+<script type="text/javascript" src="../../scripts/symbol-parameters-wrapper_deferred.js" defer></script></head>
+<body>
+    <div class="root">
+    <nav class="navigation theme-dark" id="navigation-wrapper">
+<a class="library-name--link" href="../../index.html">
+                    Balloon
+            </a>        <button class="navigation-controls--btn navigation-controls--btn_toc ui-kit_mobile-only" id="toc-toggle" type="button">Toggle table of contents
+        </button>
+        <div class="navigation-controls--break ui-kit_mobile-only"></div>
+        <div class="library-version" id="library-version">
+        </div>
+        <div class="navigation-controls">
+        <div class="filter-section filter-section_loading" id="filter-section">
+                <button class="platform-tag platform-selector jvm-like" data-active="" data-filter=":balloon:dokkaHtmlPartial/release">androidJvm</button>
+            <div class="dropdown filter-section--dropdown" data-role="dropdown" id="filter-section-dropdown">
+                <button class="button button_dropdown filter-section--dropdown-toggle" role="combobox" data-role="dropdown-toggle" aria-controls="platform-tags-listbox" aria-haspopup="listbox" aria-expanded="false" aria-label="Toggle source sets"></button>
+                <ul role="listbox" id="platform-tags-listbox" class="dropdown--list" data-role="dropdown-listbox">
+                    <div class="dropdown--header"><span>Platform filter</span>
+                        <button class="button" data-role="dropdown-toggle" aria-label="Close platform filter">
+                            <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                        </button>
+                    </div>
+                        <li role="option" class="dropdown--option platform-selector-option jvm-like" tabindex="0">
+                            <label class="checkbox">
+                                <input type="checkbox" class="checkbox--input" id=":balloon:dokkaHtmlPartial/release" data-filter=":balloon:dokkaHtmlPartial/release">
+                                <span class="checkbox--icon"></span>
+                                androidJvm
+                            </label>
+                        </li>
+                </ul>
+                <div class="dropdown--overlay"></div>
+            </div>
+        </div>
+            <button class="navigation-controls--btn navigation-controls--btn_theme" id="theme-toggle-button" type="button">Switch theme
+            </button>
+            <div class="navigation-controls--btn navigation-controls--btn_search" id="searchBar" role="button">Search in
+                API
+            </div>
+        </div>
+    </nav>
+        <div id="container">
+            <div class="sidebar" id="leftColumn">
+                <div class="dropdown theme-dark_mobile" data-role="dropdown" id="toc-dropdown">
+                    <ul role="listbox" id="toc-listbox" class="dropdown--list dropdown--list_toc-list" data-role="dropdown-listbox">
+                        <div class="dropdown--header">
+                            <span>
+                                    Balloon
+                            </span>
+                            <button class="button" data-role="dropdown-toggle" aria-label="Close table of contents">
+                                <i class="ui-kit-icon ui-kit-icon_cross"></i>
+                            </button>
+                        </div>
+                        <div class="sidebar--inner" id="sideMenu"></div>
+                    </ul>
+                    <div class="dropdown--overlay"></div>
+                </div>
+            </div>
+            <div id="main">
+<div class="main-content" data-page-type="package" id="content" pageids="balloon::com.skydoves.balloon////PointingToDeclaration//2144177878">
+  <div class="breadcrumbs"><a href="../index.html">balloon</a><span class="delimiter">/</span><span class="current">com.skydoves.balloon</span></div>
+  <div class="cover ">
+    <h1 class="cover"><span><span>Package-level</span></span> <span><span>declarations</span></span></h1>
+  </div>
+  <div class="tabbedcontent">
+    <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="TYPE">Types</button><button class="section-tab" data-togglable="FUNCTION,EXTENSION_FUNCTION">Functions</button></div>
+    <div class="tabs-section-body">
+      <div data-togglable="TYPE">
+        <h2 class="">Types</h2>
+        <div class="table"><a data-name="60827361%2FClasslikes%2F2144177878" anchor-label="ArrowOrientation" id="60827361%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-arrow-orientation/index.html"><span>Arrow</span><wbr><span><span>Orientation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="60827361%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-arrow-orientation/index.html">ArrowOrientation</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-arrow-orientation/index.html">ArrowOrientation</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">ArrowOrientation determines the orientation of the arrow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1749609098%2FClasslikes%2F2144177878" anchor-label="ArrowOrientationRules" id="1749609098%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-arrow-orientation-rules/index.html"><span>Arrow</span><wbr><span>Orientation</span><wbr><span><span>Rules</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1749609098%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-arrow-orientation-rules/index.html">ArrowOrientationRules</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-arrow-orientation-rules/index.html">ArrowOrientationRules</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">ArrowOrientationRules determines the orientation of the arrow depending on the aligning rules.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="765670691%2FClasslikes%2F2144177878" anchor-label="ArrowPositionRules" id="765670691%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-arrow-position-rules/index.html"><span>Arrow</span><wbr><span>Position</span><wbr><span><span>Rules</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="765670691%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-arrow-position-rules/index.html">ArrowPositionRules</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-arrow-position-rules/index.html">ArrowPositionRules</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">ArrowPositionRules determines the position of the arrow depending on the aligning rules.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1516099237%2FClasslikes%2F2144177878" anchor-label="AwaitBalloonsDsl" id="1516099237%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-await-balloons-dsl/index.html"><span>Await</span><wbr><span>Balloons</span><wbr><span><span>Dsl</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1516099237%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">interface </span><a href="-await-balloons-dsl/index.html">AwaitBalloonsDsl</a></div><div class="brief "><p class="paragraph">A DSL for showing multiple balloons at the same time.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1016479189%2FClasslikes%2F2144177878" anchor-label="Balloon" id="-1016479189%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon/index.html"><span><span>Balloon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1016479189%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-balloon/index.html">Balloon</a> : <a href="https://developer.android.com/reference/kotlin/androidx/lifecycle/DefaultLifecycleObserver.html">DefaultLifecycleObserver</a></div><div class="brief "><p class="paragraph">Balloon implements a customizable tooltips popup with and arrow and animations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="859360050%2FClasslikes%2F2144177878" anchor-label="BalloonAlign" id="859360050%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon-align/index.html"><span>Balloon</span><wbr><span><span>Align</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="859360050%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-balloon-align/index.html">BalloonAlign</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-balloon-align/index.html">BalloonAlign</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">BalloonAlign decides where the balloon should be placed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-522493805%2FClasslikes%2F2144177878" anchor-label="BalloonAnimation" id="-522493805%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon-animation/index.html"><span>Balloon</span><wbr><span><span>Animation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-522493805%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-balloon-animation/index.html">BalloonAnimation</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-balloon-animation/index.html">BalloonAnimation</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">BalloonAnimation is the collection of the popup animations.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1561738343%2FClasslikes%2F2144177878" anchor-label="BalloonCenterAlign" id="1561738343%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon-center-align/index.html"><span>Balloon</span><wbr><span>Center</span><wbr><span><span>Align</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1561738343%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-balloon-center-align/index.html">BalloonCenterAlign</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-balloon-center-align/index.html">BalloonCenterAlign</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">BalloonCenterAlign is an aligning rule for the <a href="-balloon/show-at-center.html">Balloon.showAtCenter</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1078748069%2FClasslikes%2F2144177878" anchor-label="BalloonHighlightAnimation" id="-1078748069%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon-highlight-animation/index.html"><span>Balloon</span><wbr><span>Highlight</span><wbr><span><span>Animation</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1078748069%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-balloon-highlight-animation/index.html">BalloonHighlightAnimation</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-balloon-highlight-animation/index.html">BalloonHighlightAnimation</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">BalloonHighlightAnimation gives repeated dynamic animations on Balloon when it's showing. The animation would work differently by the position of the arrow.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1342104488%2FClasslikes%2F2144177878" anchor-label="BalloonPersistence" id="-1342104488%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon-persistence/index.html"><span>Balloon</span><wbr><span><span>Persistence</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1342104488%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-balloon-persistence/index.html">BalloonPersistence</a></div><div class="brief "><p class="paragraph">BalloonPreferenceManager helps to persist showing counts.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1467271250%2FClasslikes%2F2144177878" anchor-label="BalloonPlacement" id="1467271250%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon-placement/index.html"><span>Balloon</span><wbr><span><span>Placement</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1467271250%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-balloon-placement/index.html">BalloonPlacement</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>anchor<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>subAnchors<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span><span class="token operator"> = </span>emptyList()<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>align<span class="token operator">: </span><a href="-balloon-align/index.html">BalloonAlign</a><span class="token operator"> = </span>BalloonAlign.TOP<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>type<span class="token operator">: </span><a href="-placement-type/index.html">PlacementType</a><span class="token operator"> = </span>PlacementType.ALIGNMENT<span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>width<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>height<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">BalloonPlacement contains data to determinate position where balloon should be displayed</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="835683375%2FClasslikes%2F2144177878" anchor-label="BalloonSizeSpec" id="835683375%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-balloon-size-spec/index.html"><span>Balloon</span><wbr><span>Size</span><wbr><span><span>Spec</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="835683375%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">object </span><a href="-balloon-size-spec/index.html">BalloonSizeSpec</a></div><div class="brief "><p class="paragraph">A specification interface for determining sizes of the Balloon materials. We can wrap some materials depending on their size of content using this interface.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1658373846%2FClasslikes%2F2144177878" anchor-label="DeferredBalloon" id="-1658373846%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-deferred-balloon/index.html"><span>Deferred</span><wbr><span><span>Balloon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1658373846%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">data </span><span class="token keyword">class </span><a href="-deferred-balloon/index.html">DeferredBalloon</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>placement<span class="token operator">: </span><a href="-balloon-placement/index.html">BalloonPlacement</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Container for <a href="-balloon/index.html">Balloon</a> and <a href="-balloon-placement/index.html">BalloonPlacement</a>.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1114900135%2FClasslikes%2F2144177878" anchor-label="DeferredBalloonGroup" id="-1114900135%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-deferred-balloon-group/index.html"><span>Deferred</span><wbr><span>Balloon</span><wbr><span><span>Group</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1114900135%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-deferred-balloon-group/index.html">DeferredBalloonGroup</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter "><span class="token keyword">val </span>balloons<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="-deferred-balloon/index.html">DeferredBalloon</a><span class="token operator">&gt;</span><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">val </span>dismissSequentially<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-boolean/index.html">Boolean</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Pack of <a href="-deferred-balloon/index.html">DeferredBalloon</a>s that will be shown at the same time.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1565275189%2FClasslikes%2F2144177878" anchor-label="IconForm" id="-1565275189%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-icon-form/index.html"><span>Icon</span><wbr><span><span>Form</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1565275189%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-icon-form/index.html">IconForm</a></div><div class="brief "><p class="paragraph">IconForm is an attribute class which has TextView attributes for customizing popup icons easily.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="594076933%2FClasslikes%2F2144177878" anchor-label="IconGravity" id="594076933%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-icon-gravity/index.html"><span>Icon</span><wbr><span><span>Gravity</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="594076933%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-icon-gravity/index.html">IconGravity</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-icon-gravity/index.html">IconGravity</a><span class="token operator">&gt; </span></div><div class="brief "><p class="paragraph">IconGravity determines the orientation of the icon.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1169947740%2FClasslikes%2F2144177878" anchor-label="OnBalloonClickListener" id="1169947740%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-balloon-click-listener/index.html"><span>On</span><wbr><span>Balloon</span><wbr><span>Click</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1169947740%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-on-balloon-click-listener/index.html">OnBalloonClickListener</a></div><div class="brief "><p class="paragraph">Interface definition for a callback to be invoked when a balloon view is clicked.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="451416538%2FClasslikes%2F2144177878" anchor-label="OnBalloonDismissListener" id="451416538%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-balloon-dismiss-listener/index.html"><span>On</span><wbr><span>Balloon</span><wbr><span>Dismiss</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="451416538%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-on-balloon-dismiss-listener/index.html">OnBalloonDismissListener</a></div><div class="brief "><p class="paragraph">Interface definition for a callback to be invoked when a balloon view is dismissed.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1637330096%2FClasslikes%2F2144177878" anchor-label="OnBalloonInitializedListener" id="-1637330096%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-balloon-initialized-listener/index.html"><span>On</span><wbr><span>Balloon</span><wbr><span>Initialized</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1637330096%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-on-balloon-initialized-listener/index.html">OnBalloonInitializedListener</a></div><div class="brief "><p class="paragraph">Interface definition for a callback to be invoked when a balloon view is initialized.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1445842020%2FClasslikes%2F2144177878" anchor-label="OnBalloonOutsideTouchListener" id="-1445842020%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-balloon-outside-touch-listener/index.html"><span>On</span><wbr><span>Balloon</span><wbr><span>Outside</span><wbr><span>Touch</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1445842020%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-on-balloon-outside-touch-listener/index.html">OnBalloonOutsideTouchListener</a></div><div class="brief "><p class="paragraph">Interface definition for a callback to be invoked when touched on outside of the balloon popup.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-569200418%2FClasslikes%2F2144177878" anchor-label="OnBalloonOverlayClickListener" id="-569200418%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-on-balloon-overlay-click-listener/index.html"><span>On</span><wbr><span>Balloon</span><wbr><span>Overlay</span><wbr><span>Click</span><wbr><span><span>Listener</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-569200418%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">fun </span><span class="token keyword">interface </span><a href="-on-balloon-overlay-click-listener/index.html">OnBalloonOverlayClickListener</a></div><div class="brief "><p class="paragraph">Interface definition for a callback to be invoked when a balloon overlay view is clicked.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="721740251%2FClasslikes%2F2144177878" anchor-label="PlacementType" id="721740251%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-placement-type/index.html"><span>Placement</span><wbr><span><span>Type</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="721740251%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">enum </span><a href="-placement-type/index.html">PlacementType</a> : <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-enum/index.html">Enum</a><span class="token operator">&lt;</span><a href="-placement-type/index.html">PlacementType</a><span class="token operator">&gt; </span></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-611029097%2FClasslikes%2F2144177878" anchor-label="TextForm" id="-611029097%2FClasslikes%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="-text-form/index.html"><span>Text</span><wbr><span><span>Form</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-611029097%2FClasslikes%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">class </span><a href="-text-form/index.html">TextForm</a></div><div class="brief "><p class="paragraph">TextFrom is an attribute class what has some attributes about TextView for customizing popup texts easily.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div data-togglable="FUNCTION">
+        <h2 class="">Functions</h2>
+        <div class="table"><a data-name="-118889255%2FFunctions%2F2144177878" anchor-label="awaitAlign" id="-118889255%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-align.html"><span>await</span><wbr><span><span>Align</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-118889255%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="await-align.html"><span class="token function">awaitAlign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">align<span class="token operator">: </span><a href="-balloon-align/index.html">BalloonAlign</a><span class="token punctuation">, </span></span><span class="parameter ">subAnchorList<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf()<span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view depending on the <a href="await-align.html">align</a> alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1437662265%2FFunctions%2F2144177878" anchor-label="awaitAlignBottom" id="-1437662265%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-align-bottom.html"><span>await</span><wbr><span>Align</span><wbr><span><span>Bottom</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1437662265%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="await-align-bottom.html"><span class="token function">awaitAlignBottom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the bottom alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-701182739%2FFunctions%2F2144177878" anchor-label="awaitAlignEnd" id="-701182739%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-align-end.html"><span>await</span><wbr><span>Align</span><wbr><span><span>End</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-701182739%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="await-align-end.html"><span class="token function">awaitAlignEnd</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the right alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1160042188%2FFunctions%2F2144177878" anchor-label="awaitAlignStart" id="-1160042188%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-align-start.html"><span>await</span><wbr><span>Align</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1160042188%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="await-align-start.html"><span class="token function">awaitAlignStart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the left alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-971302297%2FFunctions%2F2144177878" anchor-label="awaitAlignTop" id="-971302297%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-align-top.html"><span>await</span><wbr><span>Align</span><wbr><span><span>Top</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-971302297%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="await-align-top.html"><span class="token function">awaitAlignTop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the top alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-956177830%2FFunctions%2F2144177878" anchor-label="awaitAsDropDown" id="-956177830%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-as-drop-down.html"><span>await</span><wbr><span>As</span><wbr><span>Drop</span><wbr><span><span>Down</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-956177830%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="await-as-drop-down.html"><span class="token function">awaitAsDropDown</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as drop down with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="325121593%2FFunctions%2F2144177878" anchor-label="awaitAtCenter" id="325121593%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-at-center.html"><span>await</span><wbr><span>At</span><wbr><span><span>Center</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="325121593%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="await-at-center.html"><span class="token function">awaitAtCenter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">centerAlign<span class="token operator">: </span><a href="-balloon-center-align/index.html">BalloonCenterAlign</a><span class="token operator"> = </span>BalloonCenterAlign.TOP</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on the center of an anchor view.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1941801987%2FFunctions%2F2144177878" anchor-label="awaitBalloons" id="-1941801987%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="await-balloons.html"><span>await</span><wbr><span><span>Balloons</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1941801987%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><span class="token keyword">suspend </span><span class="token keyword">fun </span><a href="await-balloons.html"><span class="token function">awaitBalloons</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">block<span class="token operator">: </span><a href="-await-balloons-dsl/index.html">AwaitBalloonsDsl</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">Awaits for multiple balloons to be shown at the same time.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2128407454%2FFunctions%2F2144177878" anchor-label="balloon" id="-2128407454%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="balloon.html"><span><span>balloon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2128407454%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html"><span class="token annotation builtin">MainThread</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="balloon.html">T</a><span class="token operator"> : </span><a href="-balloon/-factory/index.html">Balloon.Factory</a><span class="token operator">&gt; </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="balloon.html"><span class="token function">balloon</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a><span class="token operator">&lt;</span><a href="-balloon/index.html">Balloon</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a> delegate to access the custom <a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a>'s Balloon property. The balloon property will be initialized lazily.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html"><span class="token annotation builtin">MainThread</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="balloon.html">T</a><span class="token operator"> : </span><a href="-balloon/-factory/index.html">Balloon.Factory</a><span class="token operator">&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/activity/ComponentActivity.html">ComponentActivity</a><span class="token punctuation">.</span><a href="balloon.html"><span class="token function">balloon</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a><span class="token operator">&lt;</span><a href="-balloon/index.html">Balloon</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a> delegate to access the <a href="https://developer.android.com/reference/kotlin/androidx/activity/ComponentActivity.html">ComponentActivity</a>'s Balloon property. The balloon property will be initialized lazily.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html"><span class="token annotation builtin">MainThread</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="balloon.html">T</a><span class="token operator"> : </span><a href="-balloon/-factory/index.html">Balloon.Factory</a><span class="token operator">&gt; </span><a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a><span class="token punctuation">.</span><a href="balloon.html"><span class="token function">balloon</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a><span class="token operator">&lt;</span><a href="-balloon/index.html">Balloon</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a> delegate to access the <a href="https://developer.android.com/reference/kotlin/androidx/fragment/app/Fragment.html">Fragment</a>'s Balloon property. The balloon property will be initialized lazily.</p></div><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html"><span class="token annotation builtin">MainThread</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><span class="token operator">&lt;</span><a href="balloon.html">T</a><span class="token operator"> : </span><a href="-balloon/-factory/index.html">Balloon.Factory</a><span class="token operator">&gt; </span><span data-unresolved-link="androidx.viewbinding/ViewBinding///PointingToDeclaration/">ViewBinding</span><span class="token punctuation">.</span><a href="balloon.html"><span class="token function">balloon</span></a><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a><span class="token operator">&lt;</span><a href="-balloon/index.html">Balloon</a><span class="token operator">&gt;</span></div><div class="brief "><p class="paragraph">Returns a <a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-lazy/index.html">Lazy</a> delegate to access the custom <span data-unresolved-link="androidx.viewbinding/ViewBinding///PointingToDeclaration/">ViewBinding</span>'s Balloon property. The balloon property will be initialized lazily.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="179784467%2FFunctions%2F2144177878" anchor-label="createBalloon" id="179784467%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="create-balloon.html"><span>create</span><wbr><span><span>Balloon</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="179784467%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html"><span class="token annotation builtin">MainThread</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="create-balloon.html"><span class="token function">createBalloon</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>block<span class="token operator">: </span><a href="-balloon/-builder/index.html">Balloon.Builder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-balloon/index.html">Balloon</a></div><div class="brief "><p class="paragraph">Creates an instance of the <a href="-balloon/index.html">Balloon</a> by scope of the <a href="-balloon/-builder/index.html">Balloon.Builder</a> using kotlin dsl.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="693186139%2FFunctions%2F2144177878" anchor-label="iconForm" id="693186139%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="icon-form.html"><span>icon</span><wbr><span><span>Form</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="693186139%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html"><span class="token annotation builtin">MainThread</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="icon-form.html"><span class="token function">iconForm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>block<span class="token operator">: </span><a href="-icon-form/-builder/index.html">IconForm.Builder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-icon-form/index.html">IconForm</a></div><div class="brief "><p class="paragraph">creates an instance of <a href="-icon-form/index.html">IconForm</a> from <a href="-icon-form/-builder/index.html">IconForm.Builder</a> using kotlin dsl.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1590434508%2FFunctions%2F2144177878" anchor-label="showAlign" id="1590434508%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-align.html"><span>show</span><wbr><span><span>Align</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1590434508%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-align.html"><span class="token function">showAlign</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">align<span class="token operator">: </span><a href="-balloon-align/index.html">BalloonAlign</a><span class="token punctuation">, </span></span><span class="parameter ">subAnchorList<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-list/index.html">List</a><span class="token operator">&lt;</span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token operator">&gt;</span><span class="token operator"> = </span>listOf()<span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view depending on the <a href="show-align.html">align</a> alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="554119476%2FFunctions%2F2144177878" anchor-label="showAlignBottom" id="554119476%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-align-bottom.html"><span>show</span><wbr><span>Align</span><wbr><span><span>Bottom</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="554119476%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-align-bottom.html"><span class="token function">showAlignBottom</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the bottom alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="987258528%2FFunctions%2F2144177878" anchor-label="showAlignEnd" id="987258528%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-align-end.html"><span>show</span><wbr><span>Align</span><wbr><span><span>End</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="987258528%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-align-end.html"><span class="token function">showAlignEnd</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the right alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="126311824%2FFunctions%2F2144177878" anchor-label="showAlignLeft" id="126311824%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-align-left.html"><span>show</span><wbr><span>Align</span><wbr><span><span>Left</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="126311824%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-align-left.html"><span class="token function"><strike>showAlignLeft</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the left alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2084975391%2FFunctions%2F2144177878" anchor-label="showAlignRight" id="-2084975391%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-align-right.html"><span>show</span><wbr><span>Align</span><wbr><span><span>Right</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2084975391%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-align-right.html"><span class="token function"><strike>showAlignRight</strike></span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the right alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-2065622489%2FFunctions%2F2144177878" anchor-label="showAlignStart" id="-2065622489%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-align-start.html"><span>show</span><wbr><span>Align</span><wbr><span><span>Start</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-2065622489%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-align-start.html"><span class="token function">showAlignStart</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the start alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="717138970%2FFunctions%2F2144177878" anchor-label="showAlignTop" id="717138970%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-align-top.html"><span>show</span><wbr><span>Align</span><wbr><span><span>Top</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="717138970%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-align-top.html"><span class="token function">showAlignTop</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as the top alignment with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-1861758131%2FFunctions%2F2144177878" anchor-label="showAsDropDown" id="-1861758131%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-as-drop-down.html"><span>show</span><wbr><span>As</span><wbr><span>Drop</span><wbr><span><span>Down</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-1861758131%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-as-drop-down.html"><span class="token function">showAsDropDown</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span></span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on an anchor view as drop down with x-off and y-off.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-446850836%2FFunctions%2F2144177878" anchor-label="showAtCenter" id="-446850836%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-togglable="EXTENSION_FUNCTION" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="show-at-center.html"><span>show</span><wbr><span>At</span><wbr><span><span>Center</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-446850836%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.jvm/-jvm-overloads/index.html"><span class="token annotation builtin">JvmOverloads</span></a></div></div><span class="token keyword">fun </span><a href="https://developer.android.com/reference/kotlin/android/view/View.html">View</a><span class="token punctuation">.</span><a href="show-at-center.html"><span class="token function">showAtCenter</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">balloon<span class="token operator">: </span><a href="-balloon/index.html">Balloon</a><span class="token punctuation">, </span></span><span class="parameter ">xOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">yOff<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-int/index.html">Int</a><span class="token operator"> = </span><span class="token constant">0</span><span class="token punctuation">, </span></span><span class="parameter ">centerAlign<span class="token operator">: </span><a href="-balloon-center-align/index.html">BalloonCenterAlign</a><span class="token operator"> = </span>BalloonCenterAlign.TOP</span></span><span class="token punctuation">)</span></div><div class="brief "><p class="paragraph">shows the balloon on the center of an anchor view.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="1074412483%2FFunctions%2F2144177878" anchor-label="textForm" id="1074412483%2FFunctions%2F2144177878" data-filterable-set=":balloon:dokkaHtmlPartial/release"></a>
+          <div class="table-row" data-filterable-current=":balloon:dokkaHtmlPartial/release" data-filterable-set=":balloon:dokkaHtmlPartial/release">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="text-form.html"><span>text</span><wbr><span><span>Form</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1074412483%2FFunctions%2F2144177878"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":balloon:dokkaHtmlPartial/release"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@</span><a href="https://developer.android.com/reference/kotlin/androidx/annotation/MainThread.html"><span class="token annotation builtin">MainThread</span></a></div></div><span class="token keyword">inline </span><span class="token keyword">fun </span><a href="text-form.html"><span class="token function">textForm</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">context<span class="token operator">: </span><a href="https://developer.android.com/reference/kotlin/android/content/Context.html">Context</a><span class="token punctuation">, </span></span><span class="parameter "><span class="token keyword">crossinline </span>block<span class="token operator">: </span><a href="-text-form/-builder/index.html">TextForm.Builder</a><span class="token punctuation">.</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token operator"> -&gt; </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-unit/index.html">Unit</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><a href="-text-form/index.html">TextForm</a></div><div class="brief "><p class="paragraph">creates an instance of <a href="-text-form/index.html">TextForm</a> from <a href="-text-form/-builder/index.html">TextForm.Builder</a> using kotlin dsl.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <div class="footer">
+        <a href="#content" id="go-to-top-link" class="footer--button footer--button_go-to-top"></a>
+        <span>© 2024 Copyright</span>
+        <span class="pull-right">
+            <span>Generated by </span>
+            <a class="footer--link footer--link_external" href="https://github.com/Kotlin/dokka">
+                <span>dokka</span>
+            </a>
+        </span>
+    </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

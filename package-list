@@ -1,0 +1,12 @@
+$dokka.format:html-v1
+$dokka.linkExtension:html
+
+module:balloon
+com.skydoves.balloon
+com.skydoves.balloon.animations
+com.skydoves.balloon.annotations
+com.skydoves.balloon.overlay
+com.skydoves.balloon.radius
+com.skydoves.balloon.vectortext
+module:balloon-compose
+com.skydoves.balloon.compose
